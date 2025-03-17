@@ -4,10 +4,12 @@ function generateNumber() {
     const max = Math.floor(document.querySelector(".input-max").value)
 
     if (min >= max) {
-        alert("O valor minimo tem que ser MENOR que o valor maximo ")
+        alert ("o valor minimo deve ser MENOR que o valor maximo")
     }
-    else {
+    
+    else{
         const result = Math.floor(Math.random() * (max - min + 1)) + min;
         alert(result)
     }
 }
+    
